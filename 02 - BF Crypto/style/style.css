@@ -14,7 +14,7 @@ body {
 
 /* ---- Style navbar ----- */
 
-header {
+#home {
     padding-top: 15px;
     display: flex;
     justify-content: center;
@@ -127,7 +127,7 @@ header ul li a:hover {
 
 /* ---- section inicio ----- */
 
-section {
+#content_inicio {
     margin-top: 15px;
     display: flex;
     justify-content: center;
