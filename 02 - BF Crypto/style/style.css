@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #AB08BB, #612abb);
+    background: -webkit-linear-gradient(left, #AB08BB, #612abb);
+    background: -moz-linear-gradient(left, #AB08BB, #612abb);
+    background: -ms-linear-gradient(left, #AB08BB, #612abb);
+    background: -o-linear-gradient(right, #AB08BB, #612abb); 
+}
+
+
+/* ---- Style navbar ----- */
+
+header {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1470px;
+    height: 90px;
+    
+}
+
+.nav_ul {
+    margin-top: 20px;
+}
+
+header ul li {
+    display: inline;
+    list-style: none;
+    
+}
+
+header ul li a{
+    color: #fff;
+    padding: 30px;
+    font-weight: 500; 
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    transition: all .5s;
+    color: #d22c9e;
+}
+
+.btns {
+    text-align: center;
+    padding-right: 40px;
+    
+}
+
+.btn-edit {
+    background: none;
+    color: #fff;
+    border: 2px solid #d22c9e;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 170px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.efeito::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 44px;
+    background: #d22c9e;
+    border-radius: 10px;
+    transition: all .8s ease;
+    z-index: -1;
+}
+
+.efeito:hover::before{
+    width: 100%;
+}
+
+.btn-edit2 {
+    background: none;
+    color: #fff;
+    border: 2px solid #d22c9e;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 80px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.efeito2::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 0px;
+    height: 44px;
+    background: #d22c9e;
+    border-radius: 10px;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.efeito2:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+/* ---- section inicio ----- */
+
+section {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#container_itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1470px;
+    height: 73vh;
+}
+
+h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: initial;
+    max-width: 400px;
+}
+
+p {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+.proposta_btn {
+    color: #d22c9e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.proposta_btn:hover {
+    color: #4A0CAC;
+    transition: all .5s ;
+}
+
+
+.img_player{
+    width: 650px;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.alternando {
+    width: 100%;
+}
