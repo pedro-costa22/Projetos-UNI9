@@ -8,4 +8,4 @@ function typeWriter(elemento){
 }
 
 const titulo = document.querySelector('h1');
-typeWriter(titulo)
+typeWriter(titulo) 
