@@ -1,0 +1,157 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media screen and (max-width: 575.98px) {
+
+
+    
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    /* Navbar */
+    #container_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vh;
+        height: 90px;  
+    }
+
+    .btns {
+        display: none;
+    }
+    
+
+  .checkbtn {
+    display: block;
+    margin: 15px 15px;
+    
+    
+  }
+
+  header ul li {
+    display: block;
+    list-style: none;
+    padding: 20px;
+    
+}
+
+header ul li a{
+    color: #d22c9e;
+    font-weight: 500; 
+    border-bottom: #d22c9e;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    transition: all .5s;
+    color: #4A0CAC;
+}
+
+  ul{
+      position: absolute;
+      width: 50%;
+      height: 80vh;
+      background: #fff;
+      top: 90px;
+      right: -100%;
+      transition: all .5s;   
+  }
+
+  .open {
+      right: 0;
+  }
+
+ 
+
+
+  /* Content inicio */
+
+  #container_itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 576px;
+    height: 73vh;
+    }
+
+     h1{
+        font-size: 50px;
+        max-width: 400px;
+    }
+
+    p {
+        font-size: 15px;
+        max-width: 300px;
+    }
+
+    .img_player{
+        display: none;
+        
+    }
+
+    .texto_animado {
+        margin-left: 100px;
+    }
+
+    
+    
+
+    
+    
+
+
+
+
+
+}
+
+
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+
+    #container_nav {
+        width: 1000px;
+        height: 90px;  
+    }
+
+    #container_itens {
+        min-width: 1000px;
+        height: 73vh;
+    }
+
+    h1{
+        font-size: 40px;
+        max-width: 300px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .img_player{
+        width: 500px;
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .texto_animado{
+        margin-left: 50px;
+    }
+    
+
+   
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) {
+
+    
+}
+

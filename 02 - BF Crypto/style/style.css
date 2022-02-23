@@ -4,11 +4,24 @@
 }
 
 body {
-    background: linear-gradient(to right, #AB08BB, #612abb);
-    background: -webkit-linear-gradient(left, #AB08BB, #612abb);
+    background: linear-gradient(to right, #AB08BB, #612abb) no-repeat;
+    background: -webkit-linear-gradient(left, #AB08BB, #612abb)no-repeat;
     background: -moz-linear-gradient(left, #AB08BB, #612abb);
     background: -ms-linear-gradient(left, #AB08BB, #612abb);
     background: -o-linear-gradient(right, #AB08BB, #612abb); 
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #d22c9e;
+    border-radius: 1000px
+}
+
+html {
+    overflow-x: hidden;
 }
 
 
@@ -25,8 +38,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 1470px;
-    height: 90px;
-    
+    height: 90px;  
 }
 
 .nav_ul {
@@ -50,6 +62,8 @@ header ul li a:hover {
     transition: all .5s;
     color: #d22c9e;
 }
+
+
 
 .btns {
     text-align: center;
@@ -121,7 +135,12 @@ header ul li a:hover {
     width: 100%;
 }
 
-
+.checkbtn {
+    color: #fff;
+    cursor: pointer; 
+    display: none;
+    font-size: 30px;
+}
 
 
 
@@ -198,4 +217,11 @@ h1::after {
 
 .alternando {
     width: 100%;
+   
+}
+
+/* ---- section inicio ----- */
+#container_bfc {
+    background-color: #fff;
+    height: 100vh;
 }
