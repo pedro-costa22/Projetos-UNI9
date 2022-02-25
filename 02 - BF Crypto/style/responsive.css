@@ -2,14 +2,111 @@
 
 @media screen and (max-width: 575.98px) {
 
+/* Navbar */
+#container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 576px;
+    height: 90px;  
+}
 
+.btns {
+    display: none;
+}
+
+
+.checkbtn {
+    display: block;
+    margin: 15px 15px;
+
+}
+
+.respon {
+    display: block;
+}
+
+
+
+header ul li {
+    display: block;
+    list-style: none;
+    padding: 20px 0px; 
+}
+
+
+
+header ul li a{
+    color: #fff;
+    font-weight: 500;
+
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    transition: all .5s;
+    color: #AB08BB;
+}
+
+ul{
+  margin-top: 20px;
+  position: fixed;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(to right, #AB08BB, #612abb) no-repeat;
+  top: 90px;
+  right: -100%;
+  transition: all .5s;
+}
+
+.open {
+  right: 0;
+}
+
+/* Content inicio */
+
+#container_itens {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 576px;
+    min-width: 50px;
+    height: 73vh;
+    }
+
+     h1{
+        font-size: 45px;
+        max-width: 300px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 300px;
+    }
+
+    #p_respon {
+        display: none;
+    }
+
+    .img_player{
+       display: none;
+        
+    }
+
+
+    h1::after {
+        content: '|';
+        margin-left: 5px;
+        opacity: 1;
+        animation: pisca .7s ;
+    }
     
 }
 
 
 
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (tablet, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
 
     /* Navbar */
@@ -30,43 +127,50 @@
     display: block;
     margin: 15px 15px;
     
-    
   }
+
+.respon {
+    display: block;
+  
+}
+
+
 
   header ul li {
     display: block;
     list-style: none;
-    padding: 20px;
-    
+    padding: 20px 0px; 
 }
 
+
+
 header ul li a{
-    color: #d22c9e;
-    font-weight: 500; 
-    border-bottom: #d22c9e;
+    color: #fff;
+    font-weight: 500;
+    
 }
 
 header ul li a:hover {
     text-decoration: none;
     transition: all .5s;
-    color: #4A0CAC;
+    color: #AB08BB;
 }
 
   ul{
-      position: absolute;
-      width: 50%;
+      margin-top: 20px;
+      position: fixed;
+      width: 100%;
       height: 80vh;
-      background: #fff;
+      background: linear-gradient(to right, #AB08BB, #612abb) no-repeat;
       top: 90px;
       right: -100%;
-      transition: all .5s;   
+      transition: all .5s;
   }
 
   .open {
       right: 0;
   }
 
- 
 
 
   /* Content inicio */
@@ -75,6 +179,7 @@ header ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     min-width: 576px;
     height: 73vh;
     }
@@ -85,35 +190,227 @@ header ul li a:hover {
     }
 
     p {
-        font-size: 15px;
-        max-width: 300px;
+        font-size: 18px;
+        max-width: 400px;
     }
 
-    .img_player{
+    #p_respon {
         display: none;
+    }
+  
+
+    .img_player{
+        width: 350px;
+        padding: 0;
+        margin: 0;
         
     }
 
-    .texto_animado {
-        margin-left: 100px;
+    
+
+    h1::after {
+        content: '|';
+        margin-left: 5px;
+        opacity: 1;
+        animation: pisca .7s ;
     }
 
     
+
+}
+
+/* Small devices (tablet modo paisagem) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Navbar */
+    #container_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vh;
+        height: 90px;  
+    }
+
+    .btns {
+        display: none;
+    }
     
 
+  .checkbtn {
+    display: block;
+    margin: 15px 15px;
     
+  }
+
+.respon {
+    display: block;
+  
+}
+
+
+
+  header ul li {
+    display: block;
+    list-style: none;
+    padding: 20px 0px; 
+}
+
+
+
+header ul li a{
+    color: #fff;
+    font-weight: 500;
     
+}
 
+header ul li a:hover {
+    text-decoration: none;
+    transition: all .5s;
+    color: #AB08BB;
+}
 
+  ul{
+      margin-top: 20px;
+      position: fixed;
+      width: 100%;
+      height: 80vh;
+      background: linear-gradient(to right, #AB08BB, #612abb) no-repeat;
+      top: 90px;
+      right: -100%;
+      transition: all .5s;
+  }
 
+  .open {
+      right: 0;
+  }
 
+ 
+
+  /* Content inicio */
+
+  #container_itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 576px;
+    height: 73vh;
+    }
+
+     h1{
+        font-size: 50px;
+        max-width: 400px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+  
+
+   
+
+    .img_player{
+        width: 350px;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+   
+    h1::after {
+        content: '|';
+        margin-left: 5px;
+        opacity: 1;
+        animation: pisca .7s;
+    }
+
+    
 
 }
 
 
 
 /* Large devices (desktops, 992px and up)*/
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    header ul li a{
+        color: #fff;
+        padding: 15px;
+        font-weight: 500; 
+    }
+
+    .btns {
+        text-align: center;
+        padding-right: 40px;
+        
+    }
+    
+    .btn-edit {
+        background: none;
+        color: #fff;
+        border: 2px solid #d22c9e;
+        border-radius: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 120px;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+        transition: color 0.4s ease;
+    }
+    
+    .efeito::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 38px;
+        background: #d22c9e;
+        border-radius: 10px;
+        transition: all .8s ease;
+        z-index: -1;
+    }
+    
+    .efeito:hover::before{
+        width: 100%;
+    }
+    
+    .btn-edit2 {
+        background: none;
+        color: #fff;
+        border: 2px solid #d22c9e;
+        border-radius: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 60px;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+        transition: color 0.4s ease;
+    }
+    
+    .efeito2::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 0px;
+        height: 38px;
+        background: #d22c9e;
+        border-radius: 10px;
+        transition: all 1s ease;
+        z-index: -1;
+    }
+    
+    .efeito2:hover::before{
+        width: 100%;
+    }
 
     #container_nav {
         width: 1000px;
@@ -143,15 +440,31 @@ header ul li a:hover {
     .texto_animado{
         margin-left: 50px;
     }
-    
+
+
+
+  
 
    
 }
 
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
+    .img_player{
+        width: 650px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #container_itens {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 1170px;
+        height: 73vh;
+    }
     
 }
 

@@ -63,6 +63,11 @@ header ul li a:hover {
     color: #d22c9e;
 }
 
+.respon {
+    display: none;
+}
+
+
 
 
 .btns {
@@ -173,6 +178,8 @@ p {
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-size: 25px;
+    margin: 0px;
+    padding: 0;
 }
 
 .proposta_btn {
@@ -182,6 +189,8 @@ p {
     width: 250px;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 10px;
+    
     
 }
 
@@ -217,11 +226,60 @@ h1::after {
 
 .alternando {
     width: 100%;
-   
 }
 
-/* ---- section inicio ----- */
-#container_bfc {
+/* ---- section bfc ----- */
+#container_txt {
+    display: flex;
+    justify-content: center;
     background-color: #fff;
-    height: 100vh;
+    height: 150px;
 }
+
+h2 {
+    margin-top: 50px;
+    color: #d22c9e;
+}
+
+#container_bfc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.bfc_items{
+    display: flex;
+    justify-content: space-around;
+    width: 1170px;
+}
+
+.bfc1, .bfc2, .bfc3 {
+    border: 2px dashed #d22c9e;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+
+#container_bfc h4 {
+    color: #d22c9e;
+    margin-top: 20px;
+}
+
+.btn-bfc{
+    background: none;
+    color: #d22c9e;
+    border: 2px solid #d22c9e;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    transition: color .4s ease;
+}
+
+
+
+
