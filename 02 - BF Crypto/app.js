@@ -1,3 +1,4 @@
+//Inicio Texto animado
 function typeWriter(elemento){
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = '';
@@ -19,3 +20,21 @@ function responsiveMenu(){
 
 const menu = document.querySelector(".checkbtn");
 menu.addEventListener("click", responsiveMenu);
+
+
+//Interações BF Coins
+function scrollTo(element){
+    document.querySelector(element).scrollIntoView({behavior: "smooth"});
+}
+
+document.querySelector("#bfcoins").addEventListener("click", function(event){
+    event.preventDefault();
+
+    scrollTo("#container_txt");
+}) 
+
+
+
+
+
+
