@@ -34,6 +34,27 @@ document.querySelector("#bfcoins").addEventListener("click", function(event){
 }) 
 
 
+//animation 
+const animate = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
+
+function animationScroll(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    animate.forEach(function(element){
+        if((windowTop) > element.offsetTop) {
+            element.classList.add(animationClass)
+        }
+    })
+}
+
+if(animate.length){
+    window.addEventListener('scroll', animationScroll)
+}
+
+
+
+
+
 
 
 
