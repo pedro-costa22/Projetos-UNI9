@@ -97,7 +97,7 @@ header ul li a:hover {
     top: 0px;
     left: 0px;
     width: 0px;
-    height: 44px;
+    height: 42px;
     background: #d22c9e;
     border-radius: 7px;
     transition: all .8s ease;
@@ -129,9 +129,9 @@ header ul li a:hover {
     top: 0px;
     left: 0;
     width: 0px;
-    height: 44px;
+    height: 42px;
     background: #d22c9e;
-    border-radius: 7px;
+    border-radius: 6px;
     transition: all 1s ease;
     z-index: -1;
 }
