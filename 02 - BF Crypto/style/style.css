@@ -245,7 +245,6 @@ h2 {
     justify-content: center;
     width: 100%;
     height: 700px;
-    border: 1px solid rexd;
     background: #fff;
 }
 
@@ -260,14 +259,13 @@ h2 {
     width: 300px;
     height: 400px;
     text-align: center;
-    cursor: pointer;
 }
-
 
 
 #container_bfc h4 {
     color: #d22c9e;
     margin-top: 20px;
+    position: relative;
 }
 
 .btn-bfc{
@@ -282,6 +280,35 @@ h2 {
     position: relative;
     transition: color .4s ease;
 }
+
+.efeito_bfc::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    border-radius: 7px;
+    height: 43px;
+    background-color: #d22c9e;
+    transition: .5s ease;
+    z-index: -1;
+}
+
+.efeito_bfc:hover::before{
+    width: 100%;
+}
+
+.efeito_bfc:hover{
+    color: #fff;
+}
+
+.bfc_items img:hover{
+    position: relative;
+    transition: all .100s ease-in-out;
+    top: -5px;
+    cursor: pointer;
+}
+
 
 /* ---- Galeria img ----- */
 
@@ -507,6 +534,14 @@ h2 {
 .btn-glr4:hover {
     color: #fff;
 }
+
+.transition {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+
+
 /* ---- Pre-save ----- */
 #container_game {
     display: flex;
@@ -541,7 +576,6 @@ h3::after{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    
 }
 
 .presave img{
@@ -590,6 +624,7 @@ h3::after{
 }
 
 
+
 /* ---- Footer ----- */
 
 #container_footer {
@@ -609,29 +644,31 @@ h3::after{
 }
 
 h4 {
-    
     color: #fff;
     font-weight: bold;
 }
 
-footer ul li {
-    list-style: none;
+footer a{
+    display: block;
     padding-top: 10px;
-    padding-bottom: 10px;
 }
 
-footer ul li a{
+footer  a{
     color: #fff;
     font-weight: 700;
 }
 
-footer ul li a:hover{
+footer  a:hover{
     text-decoration: none;
     color: #d22c9e;
 }
 
 .redesfooter {
     text-align: center;
+}
+
+.redesfooter a {
+    display: inline-block;
 }
 
 .contato {

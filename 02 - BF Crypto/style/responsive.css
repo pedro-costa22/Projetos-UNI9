@@ -100,11 +100,109 @@ ul{
         opacity: 1;
         animation: pisca .7s ;
     }
+
+    /* BF Coins */
+
+    #container_txt{
+        height: 150px;
+        background: #fff;
+    }
+
+    #container_bfc{
+        height: 100%;
+    }
+
+
+    .bfc_items {
+        width: 768px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bfc1, .bfc2, .bfc3 {
+        margin-bottom: 15px;
+    }
+
+
+     /* Galeria */
+     .galeria_items{
+        justify-content: space-around;
+        width: 575px;
+    }
+
+    .efeitoglr1::before, .efeitoglr2::before, .efeitoglr3::before, .efeitoglr4::before{
+        height: 36px;
+    }
+
+    /* ----- pré-save----- */
+
+    #game_items {
+        width: 992px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+     #imgResponsive {
+        width: 250px;
+     }
+
+    h3{
+        color: #fff;
+        font-size: 32px;
+        margin-left: 0px;
+    }
+ 
+    .presave {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    
+    }
+    
+    .presave img{
+       margin: 0;
+    }
+    
+    .presave p {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .input{
+       background: #fff;
+       width: 300px;
+       height: 40px;
+       border-radius: 12px;
+       cursor: text;
+    }
+
+    .btn-game {
+        margin: 0;
+        margin-top: 20px;
+        border-radius: 12px;
+        background: #d22c9e;
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+
+    /* ----- Footer ------- */
+ 
+    #footer_items {
+        justify-content: space-around;
+        flex-direction: column;
+        width: 768px;
+        height: 600px;
+    }
     
 }
-
-
-
 
 /* Small devices (tablet, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -215,6 +313,107 @@ header ul li a:hover {
         animation: pisca .7s ;
     }
 
+
+    /* BF Coins */
+
+    #container_txt{
+        height: 150px;
+        background: #fff;
+    }
+
+    #container_bfc{
+        height: 100%;
+    }
+
+
+    .bfc_items {
+        width: 768px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bfc1, .bfc2, .bfc3 {
+        margin-bottom: 15px;
+    }
+
+
+     /* Galeria */
+     .galeria_items{
+        justify-content: space-around;
+        width: 576px;
+    }
+
+    .efeitoglr1::before, .efeitoglr2::before, .efeitoglr3::before, .efeitoglr4::before{
+        height: 36px;
+    }
+
+    /* ----- pré-save----- */
+
+    #game_items {
+        width: 576px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+     #imgResponsive {
+        width: 400px;
+     }
+
+    h3{
+        color: #fff;
+        font-size: 32px;
+        margin-left: 0px;
+    }
+ 
+    .presave {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    
+    }
+    
+    .presave img{
+       margin: 0;
+    }
+    
+    .presave p {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .input{
+       background: #fff;
+       width: 350px;
+       height: 40px;
+       border-radius: 12px;
+       cursor: text;
+    }
+
+    .btn-game {
+        margin: 0;
+        margin-top: 20px;
+        border-radius: 12px;
+        background: #d22c9e;
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+
+    /* ----- Footer ------- */
+ 
+    #footer_items {
+        justify-content: space-around;
+        flex-direction: column;
+        width: 7576px;
+        height: 600px;
+    }
     
 
 }
@@ -242,11 +441,13 @@ header ul li a:hover {
     
   }
 
-.respon {
+  .respon {
     display: block;
-  
-}
+    }
 
+    #p_respon {
+        display: none;
+    }
 
 
   header ul li {
@@ -302,23 +503,17 @@ header ul li a:hover {
         max-width: 400px;
     }
 
-    p {
-        font-size: 18px;
+    .texto_animado p {
+        font-size: 5px;
         max-width: 400px;
     }
-
-  
-
-   
 
     .img_player{
         width: 350px;
         padding: 0;
         margin: 0;
-        
     }
 
-   
     h1::after {
         content: '|';
         margin-left: 5px;
@@ -326,16 +521,117 @@ header ul li a:hover {
         animation: pisca .7s;
     }
 
+
+    /* BF Coins */
+
+    #container_txt{
+        height: 150px;
+        background: #fff;
+    }
+
+    #container_bfc{
+        height: 100%;
+    }
+
+
+    .bfc_items {
+        width: 768px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bfc1, .bfc2, .bfc3 {
+        margin-bottom: 15px;
+    }
+
+
+     /* Galeria */
+     .galeria_items{
+        justify-content: space-around;
+        width: 768px;
+    }
+
+    .efeitoglr1::before, .efeitoglr2::before, .efeitoglr3::before, .efeitoglr4::before{
+        height: 36px;
+    }
+
+    /* ----- pré-save----- */
+
+    #game_items {
+        width: 992px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+     #imgResponsive {
+        width: 700px;
+     }
+
+    h3{
+        color: #fff;
+        font-size: 32px;
+        margin-left: 0px;
+    }
+ 
+    .presave {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
     
+    }
+    
+    .presave img{
+       margin: 0;
+    }
+    
+    .presave p {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .input{
+       background: #fff;
+       width: 350px;
+       height: 40px;
+       border-radius: 12px;
+       cursor: text;
+    }
+
+    .btn-game {
+        margin: 0;
+        margin-top: 20px;
+        border-radius: 12px;
+        background: #d22c9e;
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+
+    /* ----- Footer ------- */
+ 
+    #footer_items {
+        justify-content: space-around;
+        flex-direction: column;
+        width: 768px;
+        height: 600px;
+    }
+
+
 
 }
-
-
 
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
 
+    /* ----- Topo site ----- */
     header ul li a{
         color: #fff;
         padding: 15px;
@@ -371,7 +667,7 @@ header ul li a:hover {
         width: 0px;
         height: 38px;
         background: #d22c9e;
-        border-radius: 10px;
+        border-radius: 7px;
         transition: all .8s ease;
         z-index: -1;
     }
@@ -403,7 +699,7 @@ header ul li a:hover {
         width: 0px;
         height: 38px;
         background: #d22c9e;
-        border-radius: 10px;
+        border-radius: 7px;
         transition: all 1s ease;
         z-index: -1;
     }
@@ -443,17 +739,101 @@ header ul li a:hover {
 
 
 
+    /* ----- Galeria----- */
+
+    .galeria_items{
+        justify-content: space-around;
+        width: 992px;
+    }
+
+    .efeitoglr1::before, .efeitoglr2::before, .efeitoglr3::before, .efeitoglr4::before{
+        height: 35px;
+    }
+
+    /* ----- pré-save----- */
+
+    #game_items {
+        width: 992px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+     #imgResponsive {
+        width: 800px;
+     }
+
+    h3{
+        color: #fff;
+        font-size: 32px;
+        margin-left: 0px;
+    }
+ 
+    .presave {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    
+    }
+    
+    .presave img{
+       margin: 0;
+    }
+    
+    .presave p {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .input{
+       background: #fff;
+       width: 350px;
+       height: 40px;
+       border-radius: 12px;
+       cursor: text;
+    }
+
+    .btn-game {
+        margin: 0;
+        margin-top: 20px;
+        border-radius: 12px;
+        background: #d22c9e;
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    /* ----- Footer----- */
+    
+    #footer_items {
+        justify-content: space-around;
+        width: 992px;
+    }
+
+
+
+
   
 
    
 }
 
-
 /* Extra large devices (large desktops, 1200px and up)*/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) and (max-width: 1480px) {
+
+
+    /* ---- Topo site ---- */
+
+    #container_nav {
+        width: 1200px;
+    }
 
     .img_player{
-        width: 650px;
+        width: 450px;
         padding: 0;
         margin: 0;
     }
@@ -465,6 +845,80 @@ header ul li a:hover {
         min-width: 1170px;
         height: 73vh;
     }
-    
-}
 
+
+    /* ---- BFC ---- */
+
+    .bfc_items {
+        width: 1200px;
+    }
+
+
+    /* ---- Galeria ---- */
+
+    .galeria_items{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 1400px;
+    }
+
+
+    /* ----- pré-save----- */
+
+    #game_items {
+        width: 992px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+     #imgResponsive {
+        width: 800px;
+     }
+
+    h3{
+        color: #fff;
+        font-size: 32px;
+        margin-left: 0px;
+    }
+ 
+    .presave {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .presave img{
+       margin: 0;
+    }
+    
+    .presave p {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .input{
+       background: #fff;
+       width: 350px;
+       height: 40px;
+       border-radius: 12px;
+       cursor: text;
+    }
+
+    .btn-game {
+        margin: 0;
+        margin-top: 20px;
+        border-radius: 12px;
+        background: #d22c9e;
+        width: 200px;
+        height: 40px;
+        color: #fff;
+        font-weight: 700;
+    }
+   
+
+
+
+}

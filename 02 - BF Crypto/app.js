@@ -1,4 +1,4 @@
-//Inicio Texto animado
+//--------------------- Inicio Texto animado --------------------- //
 function typeWriter(elemento){
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = '';
@@ -22,19 +22,38 @@ const menu = document.querySelector(".checkbtn");
 menu.addEventListener("click", responsiveMenu);
 
 
-//Interações BF Coins
-function scrollTo(element){
-    document.querySelector(element).scrollIntoView({behavior: "smooth"});
+
+
+// -------------- Scroll Suave animation --------------------- //
+const menuList = document.querySelectorAll('#menu a[href^="#"]');
+
+menuList.forEach(item =>{
+    item.addEventListener("click", scrollToId)
+})
+
+function scrollToId(event){
+    event.preventDefault();
+    const to = scrollPosition(event.target) - 30;
+
+    scrollToAnimation(to)
 }
 
-document.querySelector("#bfcoins").addEventListener("click", function(event){
-    event.preventDefault();
+function scrollPosition(element){
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+}
 
-    scrollTo("#container_txt");
-}) 
+function scrollToAnimation(to){
+    window.scroll({
+        top: to,
+        behavior: "smooth"
+    })
+}
 
 
-//animation 
+
+
+//--------------------- Animation items ---------------------//
 const animate = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
@@ -61,12 +80,14 @@ const guerComum = document.getElementById('guerreiro1');
 guerComum.addEventListener("mouseover", function(){
     guerComum.src = "./images/propriedade_guerreiro1.png";
     guerComum.style.cursor = "pointer"
+    
 })
 
 guerComum.addEventListener("mouseout", function(){
     guerComum.src = "./images/guerreiro1.png";
     guerComum.style.cursor = "pointer"
-})
+    
+}) 
 
 
 const guerRaro = document.getElementById('guerreiro2');
