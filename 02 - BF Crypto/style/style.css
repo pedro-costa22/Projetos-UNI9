@@ -95,12 +95,12 @@ header ul li a:hover {
     content: '';
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 0;
     width: 0px;
     height: 42px;
     background: #d22c9e;
-    border-radius: 7px;
-    transition: all .8s ease;
+    border-radius: 6px;
+    transition: all 1s ease;
     z-index: -1;
 }
 
@@ -259,6 +259,7 @@ h2 {
     width: 300px;
     height: 400px;
     text-align: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
 }
 
 
@@ -341,6 +342,7 @@ h2 {
     height: 400px;
     text-align: center;
     margin-bottom: 60px;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
 .glr1 {
@@ -557,6 +559,7 @@ h2 {
     width: 1470px;
 }
 
+
 h3{
     color: #fff;
     font-size: 42px;
@@ -661,6 +664,7 @@ footer  a{
 footer  a:hover{
     text-decoration: none;
     color: #d22c9e;
+    margin-left: 5px;
 }
 
 .redesfooter {
@@ -671,9 +675,15 @@ footer  a:hover{
     display: inline-block;
 }
 
+.navbarFooter a:hover{
+    margin-left: 5px;
+}
+
 .contato {
     text-align: center;
 }
+
+
 
 .icons {
     padding-bottom: 20px;
@@ -687,6 +697,7 @@ footer  a:hover{
 
 .icons a:hover{
     color: #d22c9e;
+    margin: 0px;
 }
 
 h5 {

@@ -16,10 +16,18 @@ typeWriter(titulo)
 function responsiveMenu(){
     const menuItem = document.querySelector("#menu");
     menuItem.classList.toggle("open");
+    
+    
+
+    window.onscroll = () => {
+        menuItem.classList.remove("open")
+    }
 }
 
 const menu = document.querySelector(".checkbtn");
 menu.addEventListener("click", responsiveMenu);
+
+
 
 
 
