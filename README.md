@@ -5,22 +5,13 @@
 
 <hr>
 
-<p> • Geek World </p>
-<p> Geek World é uma empresa ficticia, que atua na venda de artigos com tema nerd, que variam entre roupas, games e muito mais <p>
-<o> • O projeto foi ministrado no 1° Semestre do curso de Analise e Desenvolvimento de Sistemas, onde o foco foi praticar os conhecimentos em HTML e CSS. <p>
+<p> •Blade of Fire </p>
+<p> A Beta Studios é uma empresa ficticia, que atua no desenvolvimento de Jogos e sistemas de compras NFT, atualmente o estamos desenvolvendo o Blade of Fire, que será um jogo com tema de RPG. <p>
+<o> • O projeto foi ministrado no 2° Semestre do curso de Analise e Desenvolvimento de Sistemas. <p>
   
 <hr>
   
 <div>
-  <table borrder="1">
-  <tr>
-    <td>
-      <h3 align="center"> • Geek World </h3>
-      <img src="https://github.com/pedro-costa22/Projetos-Faculdade/blob/master/01%20-%20Geek%20World/imagens/png%20logo.png?raw=true" width=250px>
-      <li align="center"><a href="https://github.com/pedro-costa22/Projetos-Faculdade/tree/master/01%20-%20Geek%20World"> CONFIRA </a></li>
-     </td>
-  </tr>
-</table>
 
   <table borrder="1">
   <tr>
