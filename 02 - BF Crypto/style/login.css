@@ -10,7 +10,7 @@
     justify-content: space-between;
     background: #fff;
     width: 1370px;
-    height: 800px;
+    height: 80vh;
     border-radius: 15px;
     
 }
@@ -43,7 +43,7 @@
 .form h5 {
     color: #000;
     font-size: 50px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .form p {
@@ -53,8 +53,8 @@
 }
 
 .form label {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     margin-top: 40px;
 }
 
@@ -64,10 +64,27 @@
     border: 2px solid #000;
     border-radius: 10px;
     padding-left: 10px;
+    padding: 18px;
 }
 
 .form ::-webkit-input-placeholder {
     color: rgb(0, 0, 0, .4);
+}
+
+.icons-login i {
+    margin: 30px 5px;
+    padding: 12px;
+    background: rgb(0, 0, 0, .1);
+    border-radius: 5px;
+    font-size: 30px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.icons-login i:hover {
+    background-color:  #d22c9e;
+    color: #fff;
+
 }
 
 
@@ -100,6 +117,7 @@ form a:hover{
 
 .form i {
     color: #d22c9e;
+    font-size: 20px;
 }
 
 .acessar {
@@ -250,10 +268,24 @@ form a:hover{
     .btn-voltar {
         height: 60px;
     }
-    
 
+    .icons-login i {
+        margin: 10px 2px;
+        padding: 10px;
+        font-size: 15px;
+    }
 
-    
+    .btn-acessar {
+        width: 300px;
+    }
+
+    .btn-acessar2 {
+        width: 300px;
+    }
+
+    .form h6 {
+        margin-top: 20px;
+    }
 
     
 }
@@ -267,6 +299,7 @@ form a:hover{
 
     .login {
         width: 550px;
+        height: 670px;
         justify-content: center;
     }
     
@@ -285,6 +318,16 @@ form a:hover{
 
     .form h6, .form h5 {
         font-size: 40px;
+    }
+
+    .icons-login i {
+        margin: 10px 5px;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .form h6 {
+        margin-top: 10px;
     }
 
     
@@ -330,19 +373,27 @@ form a:hover{
         margin-left: 40px !important;
     }
 
+    .icons-login i {
+        margin: 10px 5px;
+        padding: 10px;
+        font-size: 25px;
+    }
+
     
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
     #container_login {
-        height: 800px;
+        height: 100vh;
+        margin-bottom: 30vh;
+        
     }
-
 
     .login {
         width: 992px;
         height: 700px;
+        justify-content: center;
     }
 
     .btn-voltar a{
@@ -351,16 +402,24 @@ form a:hover{
 
     .form input {
         width: 400px;
-        height: 35px; 
-        
+        height: 35px;   
+        margin: 0 auto;
     }
 
     .form h5 {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .form h6 {
         margin-top: 10px;
+    }
+
+  
+
+    .icons-login i {
+        margin: 10px 5px;
+        padding: 10px;
+        font-size: 25px;
     }
 
    
@@ -368,6 +427,7 @@ form a:hover{
 
 @media screen and (min-width: 1200px) and (max-width: 1480px){
 
+    
     .login {
         width: 1200px;
         height: 700px;
@@ -378,11 +438,30 @@ form a:hover{
     }
 
     .form h5 {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .form h6 {
         margin-top: 10px;
+    }
+
+    .icons-login i {
+        margin: 10px 5px;
+        padding: 10px;
+        font-size: 25px;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 1480px){
+    #container_login {
+        height: 100vh;
+    }
+
+    .login {
+        height: 780px;
     }
 }
 

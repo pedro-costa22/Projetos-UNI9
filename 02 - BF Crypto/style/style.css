@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    transition: all .1s linear;
 }
 
 body {
@@ -25,6 +26,8 @@ html {
 }
 
 
+
+
 /* ---- Style navbar ----- */
 
 #home {
@@ -39,6 +42,7 @@ html {
     align-items: center;
     width: 1470px;
     height: 90px;  
+   
 }
 
 .nav_ul {
@@ -66,9 +70,6 @@ header ul li a:hover {
 .respon {
     display: none;
 }
-
-
-
 
 .btns {
     text-align: center;
@@ -189,15 +190,39 @@ h1{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     width: 250px;
-    border-radius: 10px;
+    border-radius: .5em;
+    border: 1px solid #d22c9e;
+    box-shadow:.2em .2em 0 rgba(255, 68, 199, 0.2);
     padding: 10px;
     margin-top: 10px;
+    transition: all .5s;
 }
 
 .proposta_btn:hover {
     color: #4A0CAC;
-    transition: all .5s;
+    position: relative;
+    width: 260px;
+    color: #fff;
+    background-color: #d22c9e;
 }
+
+.texto_animado i {
+    background-color: #d22c9e;
+    color: #fff;
+    padding: 4px 6px;
+    margin-left: 5px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.proposta_btn:hover > i {
+    color: #d22c9e;
+    background-color: #fff;
+    position: relative;
+    margin-left: 8px;
+}
+
+
 
 .img_player{
     width: 650px;
@@ -289,7 +314,7 @@ h2 {
     left: 0px;
     width: 0px;
     border-radius: 7px;
-    height: 43px;
+    height: 100%;
     background-color: #d22c9e;
     transition: .5s ease;
     z-index: -1;
@@ -306,7 +331,7 @@ h2 {
 .bfc_items img:hover{
     position: relative;
     transition: all .100s ease-in-out;
-    top: -5px;
+    top: -5px; 
     cursor: pointer;
 }
 
@@ -337,13 +362,67 @@ h2 {
     width: 1270px;
 }
 
+
 .glr1, .glr2, .glr3, .glr4{
     width: 300px;
     height: 400px;
     text-align: center;
     margin-bottom: 60px;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    transition: all .5s ease-out;
+    position: relative;
 }
+
+.galeria_items img{
+    transition: all .2s ease-out;
+}
+
+.galeria_items img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.legend-img {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    width: 50%;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.legend-img p {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.legend-img-over {
+    display: block;
+}
+
+.btn-exit {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+    z-index: -3;
+}
+
+.btn-exitAtivo {
+    display: block;
+    z-index: 1;
+}
+
+
 
 .glr1 {
     border: 2px solid #4ac927;
@@ -385,7 +464,7 @@ h2 {
     top: 0px;
     left: 0px;
     width: 0px;
-    height: 34px;
+    height: 100%;
     border-radius: 7px;
     background: #00FF66;
     transition: all .5s ease;
@@ -431,7 +510,7 @@ h2 {
     top: 0px;
     left: 0px;
     width: 0px;
-    height: 34px;
+    height: 100%;
     border-radius: 7px;
     background: #15e0d3;
     cursor: pointer;
@@ -475,7 +554,7 @@ h2 {
     top: 0px;
     left: 0px;
     width: 0px;
-    height: 34px;
+    height: 100%;
     border-radius: 7px;
     background: #e8dc1a;
     cursor: pointer;
@@ -521,7 +600,7 @@ h2 {
     top: 0px;
     left: 0px;
     width: 0px;
-    height: 34px;
+    height: 100%;
     border-radius: 7px;
     background: #FF0000;
     transition: all .5s ease;
