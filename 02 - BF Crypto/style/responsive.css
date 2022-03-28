@@ -104,6 +104,7 @@ ul{
     /* BF Coins */
 
     #container_txt{
+        transform: scaleY(1.1);
         height: 150px;
         background: #fff;
     }
@@ -133,6 +134,14 @@ ul{
 
     .efeitoglr1::before, .efeitoglr2::before, .efeitoglr3::before, .efeitoglr4::before{
         height: 36px;
+    }
+
+    #txtgaleria {
+        transform: scaleY(1.01);
+    }
+
+    .alternando {
+        transform: scaleY(1.1)
     }
 
     /* ----- pré-save----- */
@@ -317,6 +326,7 @@ header ul li a:hover {
     /* BF Coins */
 
     #container_txt{
+        transform: scaleY(1.1);
         height: 150px;
         background: #fff;
     }
@@ -415,6 +425,13 @@ header ul li a:hover {
         height: 600px;
     }
     
+    #txtgaleria {
+        transform: scaleY(1.01);
+    }
+
+    .alternando {
+        transform: scaleY(1.1)
+    }
 
 }
 
@@ -525,6 +542,7 @@ header ul li a:hover {
     /* BF Coins */
 
     #container_txt{
+        transform: scale(1.1);
         height: 150px;
         background: #fff;
     }
@@ -554,6 +572,14 @@ header ul li a:hover {
 
     .efeitoglr1::before, .efeitoglr2::before, .efeitoglr3::before, .efeitoglr4::before{
         height: 36px;
+    }
+
+    #txtgaleria {
+        transform: scaleY(1.01);
+    }
+
+    .alternando {
+        transform: scaleY(1.1)
     }
 
     /* ----- pré-save----- */
@@ -814,12 +840,11 @@ header ul li a:hover {
         width: 992px;
     }
 
+    #container_txt, #txtgaleria, .alternando {
+        transform: scaleY(1.1)
+    }
 
 
-
-  
-
-   
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -917,7 +942,10 @@ header ul li a:hover {
         color: #fff;
         font-weight: 700;
     }
-   
+
+    #container_txt, #txtgaleria, .alternando {
+        transform: scaleY(1.1)
+    }
 
 
 
