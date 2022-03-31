@@ -542,7 +542,7 @@ header ul li a:hover {
     /* BF Coins */
 
     #container_txt{
-        transform: scale(1.1);
+        transform: scaleY(1.1);
         height: 150px;
         background: #fff;
     }
@@ -648,6 +648,11 @@ header ul li a:hover {
         width: 768px;
         height: 600px;
     }
+
+    #txtgaleria {
+        transform: scaleY(1.1);
+    }
+   
 
 
 

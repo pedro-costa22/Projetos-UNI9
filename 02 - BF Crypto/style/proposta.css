@@ -112,3 +112,198 @@
 
 /* --------- Content inicio ----------- */
 
+.container-proposta{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 150rem;
+}
+
+.txt-proposta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.txt-proposta h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bfo-history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 7rem;
+
+}
+
+.bfo-history h3{
+    color: #d22c9e;
+    margin: 0;
+}
+
+.bfo-history h3::after {
+    content: '';
+}
+
+.bfo-history p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 500;
+    width: 585px;
+}
+
+.bfo-history span {
+    color: #d22c9e;
+    font-weight: bold;
+}
+
+.bfo-history img{
+    margin-top: 60px;
+    width: 500px;
+}
+
+.btn-comecar {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    background: #d22c9e;
+    font-weight: 700;
+    width: 230px;
+    border-radius: .5em;
+    border: 1px solid #d22c9e;
+    box-shadow:.2em .2em 0 rgba(255, 68, 199, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    transition: all .5s;
+}
+
+
+#container_footer {
+    margin-top: 0px;
+}
+
+/* --------- Contato ----------- */
+
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 25rem auto;
+  
+}
+
+.img-contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 700px;
+    background: #A851C5;
+    border-radius: 10px 0 0 10px;
+}
+
+.img-contato p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.img-contato img {
+    width: 400px;
+}
+
+.form-contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 720px;
+    height: 700px;
+    background: #F4D4FF;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.form-contato p {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.form label {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.form label i {
+    margin-left: 5px;
+    font-size: 17px;
+    color: #d22c9e;
+}
+
+.form input {
+    width: 600px;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.form input:hover {
+    border: 1px solid #d22c9e;
+}
+
+.form input::placeholder {
+    color: rgba(0, 0, 0, .4);
+}
+
+.form textarea {
+    width: 600px;
+    height: 8rem;
+    max-height: 10rem;
+    border: none;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.form textarea:hover {
+    border: 1px solid #d22c9e;
+}
+
+
+
+.btn-contato {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    background: #d22c9e;
+    font-weight: 700;
+    width: 230px;
+    border-radius: .5em;
+    border: 1px solid #d22c9e;
+    box-shadow:.2em .2em 0 rgba(255, 68, 199, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    transition: all .5s;
+}
+
+
+
+
+
+
+
+
+
+

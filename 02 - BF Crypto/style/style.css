@@ -6,7 +6,7 @@
 
 body {
     background: linear-gradient(to right, #AB08BB, #612abb) no-repeat;
-    background: -webkit-linear-gradient(left, #AB08BB, #612abb)no-repeat;
+    background: -webkit-linear-gradient(left, #AB08BB, #612abb) no-repeat;
     background: -moz-linear-gradient(left, #AB08BB, #612abb);
     background: -ms-linear-gradient(left, #AB08BB, #612abb);
     background: -o-linear-gradient(right, #AB08BB, #612abb); 
@@ -807,6 +807,8 @@ h5 {
 #banner {
     transition: opacity 500ms;
 }
+
+
 
 
 
