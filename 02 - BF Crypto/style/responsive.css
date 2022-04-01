@@ -39,6 +39,7 @@ header ul li {
 header ul li a{
     color: #fff;
     font-weight: 500;
+    padding-left: 10px;
 
 }
 
@@ -254,6 +255,7 @@ ul{
 header ul li a{
     color: #fff;
     font-weight: 500;
+    padding-left: 10px;
     
 }
 
@@ -478,6 +480,7 @@ header ul li a:hover {
 header ul li a{
     color: #fff;
     font-weight: 500;
+    padding-left: 10px;
     
 }
 
@@ -665,7 +668,7 @@ header ul li a:hover {
     /* ----- Topo site ----- */
     header ul li a{
         color: #fff;
-        padding: 15px;
+        
         font-weight: 500; 
     }
 

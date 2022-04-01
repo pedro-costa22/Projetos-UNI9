@@ -116,7 +116,7 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    height: 150rem;
+    height: 100%;
 }
 
 .txt-proposta {
@@ -186,6 +186,37 @@
     margin-top: 0px;
 }
 
+/* --------- Review ----------- */
+
+.review {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid red;
+    height: 300px;
+    margin-top: 20em;
+    background-image: url(../images/game1.jpg);
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------- Contato ----------- */
 
 
@@ -193,7 +224,7 @@
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    margin: 25rem auto;
+    margin: 20rem auto;
   
 }
 
@@ -262,11 +293,16 @@
 }
 
 .form input:hover {
-    border: 1px solid #d22c9e;
+    border: 2px solid #d22c9e;
 }
 
 .form input::placeholder {
     color: rgba(0, 0, 0, .4);
+}
+
+.form input:focus, .form textarea:focus {
+    outline: 2px solid #d22c9e;
+    box-shadow: 0 0 0 0;
 }
 
 .form textarea {
@@ -275,13 +311,12 @@
     max-height: 10rem;
     border: none;
     border-radius: 5px;
-    color: rgba(0, 0, 0, .4);
+   
 }
 
 .form textarea:hover {
     border: 1px solid #d22c9e;
 }
-
 
 
 .btn-contato {

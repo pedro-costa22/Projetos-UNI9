@@ -58,7 +58,7 @@ function scrollToAnimation(to){
 
 //--------------------- Animation items ---------------------//
 const animate = document.querySelectorAll('[data-anime]');
-const animate2 = document.querySelector('[data-animeBfc]');
+const animate2 = document.querySelectorAll('[data-bfcoins]');
 const animationClass = 'animate';
 
 function animationScroll(){
@@ -69,11 +69,41 @@ function animationScroll(){
         }
     })
 
+    animate2.forEach(function(test){
+        if((windowTop) > test.offsetTop) {
+            test.classList.add(animationClass)
+        }
+    })
+
 }
 
 if(animate.length){
     window.addEventListener('scroll', animationScroll)
 }
+
+
+//--------------------- Navbar fixed ---------------------//
+
+window.addEventListener("scroll", () =>{
+    const navbar = document.querySelector("#home");
+    const containerBfc = document.querySelector("#container_bfc").offsetTop;
+    let alturaScrollSite = window.pageYOffset;
+
+    if(alturaScrollSite >= containerBfc){
+        navbar.classList.add('navbarFixed')
+
+    } else {
+        navbar.classList.remove('navbarFixed')
+    }
+ 
+})
+
+
+
+
+
+
+
 
 
 
