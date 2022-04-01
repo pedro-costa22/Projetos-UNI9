@@ -57,10 +57,10 @@
                 <input type="email" name="email" placeholder="seuemail@exemplo.com..."> <br>
 
                 <label for="senha">Senha <i class="fa-solid fa-lock"></i></label> <br>
-                <input type="password" name="email" placeholder="Crie uma senha"> <br>
+                <input type="password" name="senha" placeholder="Crie uma senha"  id="password-reg" minlength="4" maxlength="20" onkeyup="testing()"> <br>
 
                 <label for="senha">Confirmar senha <i class="fa-solid fa-lock"></i></label> <br>
-                <input type="password" name="email" placeholder="Confirmar senha..."> <br>
+                <input type="password" name="senha" placeholder="Confirmar senha..."   minlength="4" maxlength="20" > <br>
 
 
                 <div>
@@ -75,5 +75,7 @@
 
     </header> <!-- //Registro-->
     
+
+    <script src="js/passwordOpen.js"></script>
 </body>
 </html>

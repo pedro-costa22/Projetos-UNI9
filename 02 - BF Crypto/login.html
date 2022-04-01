@@ -62,7 +62,17 @@
                 <input type="email" name="email" placeholder="seuemail@exemplo.com..."> <br>
 
                 <label for="senha">Senha <i class="fa-solid fa-lock"></i></label> <br>
-                <input type="password" name="senha" placeholder="digite sua senha...">  <i class="fa-solid fa-eye-slash" id="icon-password"></i><br>
+               
+                <div class="container-senha">
+                    <input type="password" name="senha" placeholder="digite sua senha..." id="password-input" minlength="4" maxlength="20" onkeyup="passwordValid()">  
+                <div class="openPass">
+                    <i class="fa-solid fa-eye-slash" id="open-password"></i> 
+                </div>
+                <div class="closePass">
+                    <i class="fa-solid fa-eye closed-password" id="closed-password"></i>
+                </div>
+                </div>
+             
                 
                 
 
