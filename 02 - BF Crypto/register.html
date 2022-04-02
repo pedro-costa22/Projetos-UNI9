@@ -51,20 +51,39 @@
             <form method="post" class="formRegistro">
 
                 <label for="name">Name <i class="fa-solid fa-envelope"></i></label> <br>
-                <input type="name" name="email" placeholder="Informe seu nome..."> <br>
+                <input type="name" name="email" placeholder="Informe seu nome..." class="nome"> <br>
 
                 <label for="email">Email <i class="fa-solid fa-envelope"></i></label> <br>
                 <input type="email" name="email" placeholder="seuemail@exemplo.com..."> <br>
 
                 <label for="senha">Senha <i class="fa-solid fa-lock"></i></label> <br>
-                <input type="password" name="senha" placeholder="Crie uma senha"  id="password-reg" minlength="4" maxlength="20" onkeyup="testing()"> <br>
+
+                <div class="container-senha">
+                    <input type="password" name="senha" placeholder="Crie uma senha"  class="password-reg" minlength="4" maxlength="20" onkeyup="createPasswordValid()"> 
+                <div class="openPass">
+                    <i class="fa-solid fa-eye-slash" id="open-password"></i> 
+                </div>
+                <div class="closePass">
+                    <i class="fa-solid fa-eye closed-password" id="closed-password"></i>
+                </div>
+                </div>
 
                 <label for="senha">Confirmar senha <i class="fa-solid fa-lock"></i></label> <br>
-                <input type="password" name="senha" placeholder="Confirmar senha..."   minlength="4" maxlength="20" > <br>
+
+                <div class="container-senha">
+                    <input type="password" name="senha" placeholder="Confirmar senha..."  class="password-reg2" minlength="4" maxlength="20" onkeyup="createPasswordValid()"> <br>
+                <div class="openPass">
+                    <i class="fa-solid fa-eye-slash" id="open-password"></i> 
+                </div>
+                <div class="closePass">
+                    <i class="fa-solid fa-eye" id="closed-password"></i>
+                </div>
+                </div>
 
 
                 <div>
-                    <button type="#" class="btn btn-acessar2">Criar conta</button>
+                    <button type="#" class="btn btn-acessar">Criar conta</button>
+                    <label for="btn" id="valid-pass"></label>
                 </div>
                
             </form>
@@ -76,6 +95,6 @@
     </header> <!-- //Registro-->
     
 
-    <script src="js/passwordOpen.js"></script>
+    <script src="js/register.js"></script>
 </body>
 </html>
