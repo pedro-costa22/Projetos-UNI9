@@ -1,4 +1,6 @@
 /* --------- Content inicio ----------- */
+
+
 .slider {
     margin: 0 auto;
     width: 900px;
@@ -99,8 +101,8 @@
     display: flex;
     justify-content: space-between;
     width: 880px;
-    right: 290px;
-    top: 460px;
+    top: 29rem;
+    margin-left: 10px;
 }
 
 
@@ -163,7 +165,7 @@
 }
 
 .bfo-history img{
-    margin-top: 60px;
+    margin-top: 30px;
     width: 500px;
 }
 
@@ -189,33 +191,59 @@
 /* --------- Review ----------- */
 
 .review {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
     width: 80%;
     margin: auto;
     justify-content: center;
-    border: 1px solid red;
-    height: 300px;
+    border-radius: 7px;
+    height: 350px;
     margin-top: 20em;
-    background-image: url(../images/game1.jpg);
     background-attachment: fixed;
 }
 
+.circle {
+    grid-area: "circle";
+    position: relative;
+    height: 230px;
+    width: 230px;
+    background: linear-gradient(to right, #AB08BB, #612abb) no-repeat;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    box-shadow: .2em .2em 1rem rgba(0, 0, 0, 0.4);             
+}
 
 
+.circle::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: .2em .2em  2rem rgba(255, 255, 255, 0.2);
+                
+}
 
+.text {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 520;
+    font-size: 30px;
+    color: #AB08BB;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.review p {
+    font-size: 20px;
+    color: #AB08BB;
+    font-weight: 550;
+}
 
 
 /* --------- Contato ----------- */
@@ -334,6 +362,449 @@
     transition: all .5s;
 }
 
+/* --------- Perguntas ----------- */
+
+.perguntas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 12rem;
+    align-items: center;
+    
+}
+
+.quest-container{
+    display: flex;
+    flex-direction: column;
+    width: calc(1170px / 2);
+}
+
+.quest {
+    margin: 15px 0px 0px 5%;
+    width: 95%;
+    height: 60px;
+    background: #f9f9f9;
+    box-shadow:.2em .2em 0 rgba(255, 68, 199, 0.2);
+    cursor: pointer;
+}
+
+.quest p {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.quest p span {
+    color: #AB08BB;
+    float: right;
+    padding-right: 5px;
+}
+
+.answer {
+    margin: 0px 0px 0px 5%;
+    width: 95%;
+    height: 100%;
+    background: #f9f9f9;
+    box-shadow:.2em .2em 0 rgba(255, 68, 199, 0.2);
+    transition: .5s ease-in-out;
+    display: none;
+    cursor: pointer;
+}
+
+.answer p {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 450;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.answer p span {
+    color: #AB08BB;
+    float: right;
+    padding-right: 5px;
+}
+
+.open-answer {
+    display: block;
+}
+
+.img-quest {
+    width: 550px;
+    height: 515px;
+}
+
+
+
+
+
+
+
+/* --------- Responsive  ----------- */
+
+@media screen and (max-width: 575.98px) {
+
+    .bfo-history {
+        width: 300px;
+        justify-content: center;
+    }
+
+    .bfo-history img {
+        width: 300px;
+    }
+
+    .bfo-history p {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    
+
+    .review p {
+        font-size: 18px;
+    }
+
+    .review {
+        display: none;
+    }
+
+    .img-contato {
+        display: none;
+    }
+
+    .form-container {
+        max-width: 330px;
+        justify-content: center;
+    }
+
+    .form-contato{
+        border-radius: 10px;
+    }
+
+    .form input{
+        width: 300px;
+    }
+
+    .form textarea {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .bfo-history {
+        width: 576px;
+        justify-content: center;
+    }
+
+    .bfo-history img {
+        width: 500px;
+    }
+
+    .bfo-history p {
+        width: 600px;
+        font-size: 20px;
+    }
+
+    .slider {
+        width: 550px;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .slide-img img{
+        width: 550px;
+        height: 300px;
+    }
+
+    .manual-navigation {
+        width: 550px;
+        margin-top: -330px;
+    }
+
+    .navigation-auto{
+        width: 550px;
+        margin-top: 270px;
+    }
+
+    .btn-slide {
+        width: 530px;
+        top: 56%;
+    }
+
+    .btn-slide i {
+        font-size: 25px;
+    }
+
+    #container_itens {
+        max-width: 1200px;
+    }
+
+    .circle {
+        height: 150px;
+        width: 150px;
+        margin: 0px 10px;
+    }
+
+    .review p {
+        font-size: 18px;
+    }
+
+    .review {
+        display: none;
+    }
+
+    .img-contato {
+        display: none;
+    }
+
+    .form-container {
+        max-width: 576px;
+        justify-content: center;
+    }
+
+    .form-contato{
+        border-radius: 10px;
+    }
+
+    .form input{
+        width: 500px;
+    }
+
+    .form textarea {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+
+    .bfo-history {
+        width: 768px;
+        justify-content: center;
+    }
+
+    .bfo-history img {
+        width: 500px;
+       
+    }
+
+    .bfo-history p {
+        width: 600px;
+        font-size: 20px;
+    }
+
+    .slider {
+        width: 700px;
+        height: 400px;
+        margin: 30px;
+    }
+
+    .slide-img img{
+        width: 700px;
+        height: 400px;
+    }
+
+    .manual-navigation {
+        width: 700px;
+        margin-top: -230px;
+    }
+
+    .navigation-auto{
+        width: 700px;
+        margin-top: 370px;
+    }
+
+    .btn-slide {
+        width: 680px;
+        top: 52%;
+    }
+
+    .btn-slide i {
+        font-size: 30px;
+    }
+
+    #container_itens {
+        max-width: 1200px;
+    }
+
+    .circle {
+        height: 150px;
+        width: 150px;
+        margin: 0px 10px;
+    }
+
+    .review p {
+        font-size: 18px;
+    }
+
+    .review {
+        max-width: 768px;
+    }
+
+    .img-contato {
+        display: none;
+    }
+
+    .form-container {
+        max-width: 768px;
+        justify-content: center;
+    }
+
+    .form-contato{
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+   #container_nav .logo {
+       width: 100px;
+   }
+
+   #container_nav {
+       width: 992px;
+   }
+
+  .nav_ul ul li  {
+      font-size: 15px;
+      padding: 0 10px;
+  }
+
+  #menu {
+      margin-left: 120px;
+  }
+
+   .bfo-history {
+    width: 992px;
+    justify-content: center;
+}
+
+    .bfo-history img {
+        width: 400px;
+    
+    }
+
+    .bfo-history p {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .slider {
+        width: 570px;
+        height: 370px;
+        margin: 30px;
+    }
+
+    .slide-img img{
+        width: 570px;
+        height: 370px;
+    }
+
+    .manual-navigation {
+        width: 570px;
+        margin-top: -255px;
+    }
+
+    .navigation-auto{
+        width: 570px;
+        margin-top: 345px;
+    }
+
+    .btn-slide {
+        width: 540px;
+        top: 50%;
+    }
+
+    .btn-slide i {
+        font-size: 30px;
+    }
+
+    #container_itens {
+        max-width: 1200px;
+    }
+
+    .circle {
+        height: 150px;
+        width: 150px;
+        margin: 0px 10px;
+    }
+
+    .review p {
+        font-size: 18px;
+    }
+
+    .review {
+        max-width: 768px;
+    }
+
+    .img-contato {
+        display: none;
+    }
+
+    .form-container {
+        max-width: 768px;
+        justify-content: center;
+    }
+
+    .form-contato{
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1480px){
+    .bfo-history {
+        width: 1000px;
+    }
+
+    .bfo-history img {
+        width: 450px;
+    }
+
+    .bfo-history p {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .slider {
+        width: 730px;
+        height: 500px;
+    }
+
+    .slide-img img{
+        width: 730px;
+        height: 500px;
+    }
+
+    .manual-navigation {
+        width: 730px;
+        margin-top: -140px;
+    }
+
+    .navigation-auto{
+        width: 730px;
+        margin-top: 460px;
+    }
+
+    .btn-slide {
+        width: 710px;
+        top: 26rem;
+    }
+
+    #container_itens {
+        max-width: 1200px;
+    }
+   
+}
+
+@media screen and (min-width: 1480px){
+  .container-proposta{
+      transform: scaleY(1.01);
+  }
+}
 
 
 

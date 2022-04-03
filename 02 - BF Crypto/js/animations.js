@@ -82,21 +82,93 @@ if(animate.length){
 }
 
 
-//--------------------- Navbar fixed ---------------------//
 
-window.addEventListener("scroll", () =>{
-    const navbar = document.querySelector("#home");
-    const containerBfc = document.querySelector("#container_bfc").offsetTop;
-    let alturaScrollSite = window.pageYOffset;
+//--------------------- Ask ---------------------//
+let btnAsk = document.querySelectorAll(".quest");
+let answer = document.querySelectorAll(".answer");
+let iconAsk = document.querySelectorAll(".iconAsk");
+let imgQuest = document.querySelector(".img-quest");
 
-    if(alturaScrollSite >= containerBfc){
-        navbar.classList.add('navbarFixed')
+/*
+btnAsk[0].addEventListener("click", () =>{
+     answer[0].classList.add("open-answer");
+     iconAsk[0].style.display = "none" 
+}); 
+    
+answer[0].addEventListener("click", () =>{
+    answer[0].classList.remove("open-answer");
+     iconAsk[0].style.display = "block" 
+});  */
 
-    } else {
-        navbar.classList.remove('navbarFixed')
-    }
- 
+btnAsk.forEach((ask) =>{
+    ask.addEventListener("click", () =>{
+
+        switch(ask) {
+            case btnAsk[0]:
+                answer[0].classList.add("open-answer");
+                iconAsk[0].style.display = "none";
+                imgQuest.src = "./images/moeda.svg";
+                break;
+
+            case btnAsk[1]:
+                answer[1].classList.add("open-answer");
+                iconAsk[1].style.display = "none";
+                imgQuest.src = "./images/saque.svg";
+                break;
+
+            case btnAsk[2]:
+                answer[2].classList.add("open-answer");
+                iconAsk[2].style.display = "none";
+                imgQuest.src = "./images/lancamento.svg";
+                break;
+
+            case btnAsk[3]:
+                answer[3].classList.add("open-answer");
+                iconAsk[3].style.display = "none";
+                imgQuest.src = "./images/gaming.svg";
+                break;
+        }
+    })
 })
+
+answer.forEach((resp) =>{
+    resp.addEventListener("click", () =>{
+
+        switch(resp){
+            case answer[0]:
+                answer[0].classList.remove("open-answer");
+                iconAsk[0].style.display = "block";
+                imgQuest.src = "./images/questDefault.svg";
+                break;
+            
+            case answer[1]:
+                answer[1].classList.remove("open-answer");
+                iconAsk[1].style.display = "block";
+                imgQuest.src = "./images/questDefault.svg";
+                break;
+
+            case answer[2]:
+                answer[2].classList.remove("open-answer");
+                iconAsk[2].style.display = "block";
+                imgQuest.src = "./images/questDefault.svg";
+                break;
+
+            case answer[3]:
+                answer[3].classList.remove("open-answer");
+                iconAsk[3].style.display = "block";
+                imgQuest.src = "./images/questDefault.svg";
+                break;
+        }
+    })
+})
+
+
+
+
+
+
+
+
 
 
 

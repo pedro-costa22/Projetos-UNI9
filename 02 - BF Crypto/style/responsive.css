@@ -58,6 +58,7 @@ ul{
   top: 90px;
   right: -100%;
   transition: all .5s;
+  z-index: 99;
 }
 
 .open {
@@ -257,6 +258,7 @@ header ul li a{
     font-weight: 500;
     padding-left: 10px;
     
+    
 }
 
 header ul li a:hover {
@@ -274,6 +276,7 @@ header ul li a:hover {
       top: 90px;
       right: -100%;
       transition: all .5s;
+      z-index: 99;
   }
 
   .open {
@@ -499,6 +502,7 @@ header ul li a:hover {
       top: 90px;
       right: -100%;
       transition: all .5s;
+      z-index: 99;
   }
 
   .open {
