@@ -172,7 +172,7 @@
 .btn-comecar {
     color: #fff;
     font-family: "Poppins", sans-serif;
-    background: #d22c9e;
+    background: #d22c9e !important;
     font-weight: 700;
     width: 230px;
     border-radius: .5em;
@@ -181,6 +181,11 @@
     padding: 10px;
     margin-top: 10px;
     transition: all .5s;
+}
+
+.btn-comecar:hover {
+    background: #b62187 !important;
+    transform: scale(1.02);
 }
 
 
@@ -195,7 +200,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     place-items: center;
-    width: 80%;
+    width: 70%;
     margin: auto;
     justify-content: center;
     border-radius: 7px;
@@ -362,6 +367,11 @@
     transition: all .5s;
 }
 
+.btn-contato:hover{
+    background: #b62187 !important;
+    transform: scale(1.02);
+}
+
 /* --------- Perguntas ----------- */
 
 .perguntas {
@@ -386,9 +396,13 @@
     margin: 15px 0px 0px 5%;
     width: 95%;
     height: 60px;
-    background: #f9f9f9;
+    background: #f0efef;
     box-shadow:.2em .2em 0 rgba(255, 68, 199, 0.2);
     cursor: pointer;
+}
+
+.quest:hover {
+    transform: scale(1.02);
 }
 
 .quest p {
@@ -431,10 +445,13 @@
     display: block;
 }
 
+
+
 .img-quest {
     width: 550px;
     height: 515px;
 }
+
 
 
 
@@ -452,7 +469,7 @@
     }
 
     .bfo-history img {
-        width: 300px;
+        display: none;
     }
 
     .bfo-history p {
@@ -493,6 +510,31 @@
 
     .form textarea {
         width: 300px;
+    }
+
+    .perguntas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+    }
+
+    .perguntas div img {
+        width: 300px;
+    }
+
+    .quest-container {
+        max-width: 350px;
+        align-items: center;
+    }
+
+    .quest, .answer {
+        margin: 10 auto;
+        width: 80%;
+    }
+
+    .quest p {
+        font-size: 15px;
     }
 }
 
@@ -579,6 +621,31 @@
     .form textarea {
         width: 500px;
     }
+
+    .perguntas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 576px;
+    }
+
+    .perguntas div img {
+        width: 400px;
+    }
+
+    .quest-container {
+        max-width: 576px;
+        align-items: center;
+    }
+
+    .quest, .answer {
+        margin: 10 auto;
+        width: 80%;
+    }
+
+    .quest p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px){
@@ -657,6 +724,19 @@
 
     .form-contato{
         border-radius: 10px;
+    }
+
+    .perguntas {
+        flex-direction: column;
+        max-width: 768px;
+    }
+
+    .perguntas div img {
+        width: 400px;
+    }
+
+    .quest-container {
+        max-width: 992px;
     }
 }
 
@@ -753,6 +833,19 @@
     .form-contato{
         border-radius: 10px;
     }
+
+    .perguntas {
+        flex-direction: column;
+        max-width: 992px;
+    }
+
+    .perguntas div img {
+        width: 400px;
+    }
+
+    .quest-container {
+        max-width: 992px;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1480px){
@@ -796,6 +889,14 @@
 
     #container_itens {
         max-width: 1200px;
+    }
+
+    .perguntas div img {
+        width: 500px;
+    }
+
+    .circle {
+        margin: 0px 10px;
     }
    
 }

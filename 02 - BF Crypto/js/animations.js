@@ -89,17 +89,6 @@ let answer = document.querySelectorAll(".answer");
 let iconAsk = document.querySelectorAll(".iconAsk");
 let imgQuest = document.querySelector(".img-quest");
 
-/*
-btnAsk[0].addEventListener("click", () =>{
-     answer[0].classList.add("open-answer");
-     iconAsk[0].style.display = "none" 
-}); 
-    
-answer[0].addEventListener("click", () =>{
-    answer[0].classList.remove("open-answer");
-     iconAsk[0].style.display = "block" 
-});  */
-
 btnAsk.forEach((ask) =>{
     ask.addEventListener("click", () =>{
 
@@ -108,28 +97,91 @@ btnAsk.forEach((ask) =>{
                 answer[0].classList.add("open-answer");
                 iconAsk[0].style.display = "none";
                 imgQuest.src = "./images/moeda.svg";
+
+                for(i = 1; i <= answer.length; i++){
+                    answer[i].classList.remove("open-answer");
+                }
                 break;
 
             case btnAsk[1]:
                 answer[1].classList.add("open-answer");
                 iconAsk[1].style.display = "none";
                 imgQuest.src = "./images/saque.svg";
+
+                /*
+                iconAsk[0].style.display = "block";
+                iconAsk[2].style.display = "block";
+                iconAsk[3].style.display = "block";
+                iconAsk[4].style.display = "block"; */
+
+                for(i = 0; i <= answer.length; i++){
+                    answer[i].classList.remove("open-answer");
+                    if(i == 1) {
+                        answer[i].classList.add("open-answer");
+                    } 
+                }
                 break;
 
             case btnAsk[2]:
                 answer[2].classList.add("open-answer");
                 iconAsk[2].style.display = "none";
                 imgQuest.src = "./images/lancamento.svg";
+
+                /*
+                iconAsk[0].style.display = "block";
+                iconAsk[1].style.display = "block";
+                iconAsk[3].style.display = "block";
+                iconAsk[4].style.display = "block"; */
+                
+                for(i = 0; i <= answer.length; i++){
+                    answer[i].classList.remove("open-answer");
+                    if(i == 2) {
+                        answer[i].classList.add("open-answer");
+                    } 
+                }
                 break;
 
             case btnAsk[3]:
                 answer[3].classList.add("open-answer");
                 iconAsk[3].style.display = "none";
                 imgQuest.src = "./images/gaming.svg";
+
+                /*
+                iconAsk[0].style.display = "block";
+                iconAsk[1].style.display = "block";
+                iconAsk[2].style.display = "block";
+                iconAsk[4].style.display = "block";  */
+
+                for(i = 0; i <= answer.length; i++){
+                    answer[i].classList.remove("open-answer");
+                    if(i == 3) {
+                        answer[i].classList.add("open-answer");
+                    } 
+                }
+                break;
+
+            case btnAsk[4]:
+                answer[4].classList.add("open-answer");
+                iconAsk[4].style.display = "none";
+                imgQuest.src = "./images/gaming.svg";
+                /*
+
+                iconAsk[0].style.display = "block";
+                iconAsk[1].style.display = "block";
+                iconAsk[2].style.display = "block";
+                iconAsk[3].style.display = "block"; */
+
+                for(i = 0; i <= answer.length; i++){
+                    answer[i].classList.remove("open-answer");
+                    if(i == 4) {
+                        answer[i].classList.add("open-answer");
+                    } 
+                }
                 break;
         }
+
     })
-})
+});
 
 answer.forEach((resp) =>{
     resp.addEventListener("click", () =>{
@@ -158,9 +210,64 @@ answer.forEach((resp) =>{
                 iconAsk[3].style.display = "block";
                 imgQuest.src = "./images/questDefault.svg";
                 break;
+
+             case answer[4]:
+                answer[4].classList.remove("open-answer");
+                iconAsk[4].style.display = "block";
+                imgQuest.src = "./images/questDefault.svg";
+                break;
+        }
+    })
+});
+
+btnAsk.forEach((exit) =>{
+    exit.addEventListener("click", () =>{
+
+        switch(exit){
+            case btnAsk[0]:
+                for(i = 1; i <= iconAsk.length; i++){
+                    iconAsk[i].style.display = "block";
+                }
+
+            case btnAsk[1]: 
+                for(i = 0; i <= iconAsk.length; i++){
+                     iconAsk[i].style.display = "block";
+                     if(i == 1) {
+                         iconAsk[i].style.display = "none";
+                     }
+                }
+
+            case btnAsk[2]: 
+                for(i = 0; i <= iconAsk.length; i++){
+                     iconAsk[i].style.display = "block";
+                     if(i == 2) {
+                         iconAsk[i].style.display = "none";
+                     }
+                }
+
+            case btnAsk[3]: 
+                for(i = 0; i <= iconAsk.length; i++){
+                     iconAsk[i].style.display = "block";
+                     if(i == 3) {
+                         iconAsk[i].style.display = "none";
+                     }
+                }
+
+            case btnAsk[4]: 
+                for(i = 0; i <= iconAsk.length; i++){
+                     iconAsk[i].style.display = "block";
+                     if(i == 4) {
+                         iconAsk[i].style.display = "none";
+                     }
+                }
         }
     })
 })
+
+
+
+
+
 
 
 
