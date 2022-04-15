@@ -198,6 +198,7 @@ answer.forEach((resp) =>{
 });
 
 
+
 btnAsk.forEach((exit) =>{
     exit.addEventListener("click", () =>{
 
@@ -241,7 +242,6 @@ btnAsk.forEach((exit) =>{
         }
     })
 }) 
-
 
 
 

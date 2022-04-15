@@ -25,6 +25,66 @@ html {
     overflow-x: hidden;
 }
 
+/* ---- Dev page ----- */
+
+.aguarde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.aguarde img {
+    width: 800px;
+}
+
+.form-aguarde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    height: 40vh;
+   
+}
+
+.form-aguarde p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 550;
+}
+
+.form-aguarde span {
+    font-size: 1.2rem;
+    color: #d22c9e
+}
+
+.form input {
+    padding: 7px;
+    border-radius: 2px;
+    border: none;
+}
+
+.form .email {
+    width: 60%;
+}
+
+.form .btn-cadastro {
+    color: #fff;
+    background-color: #d22c9e;
+    cursor: pointer;
+}
+
+.btn-cadastro:hover {
+    transform: scale(1.07);
+}
+
+.aguarde a {
+    margin-top: 20px;
+    color: #fff;
+}
+
 
 
 /* ---- Style navbar ----- */

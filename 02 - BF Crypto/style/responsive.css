@@ -212,6 +212,28 @@ ul{
         width: 768px;
         height: 600px;
     }
+
+    .aguarde {
+        flex-direction: column;
+    }
+
+    .aguarde img {
+        width: 300px;
+    }
+
+    .form-aguarde {
+        width: 60%;
+        height: 40vh;   
+    }
+
+    .form-aguarde p {
+        font-size: 1.2rem;
+    }
+
+    .form-aguarde span {
+        font-size: 1rem;
+
+    }
     
 }
 
@@ -438,6 +460,19 @@ header ul li a:hover {
         transform: scaleY(1.1)
     }
 
+    .aguarde {
+        flex-direction: column;
+    }
+
+    .aguarde img {
+        width: 500px;
+    }
+
+    .form-aguarde {
+        width: 60%;
+        height: 40vh;
+       
+    }
 }
 
 /* Small devices (tablet modo paisagem) */
@@ -659,7 +694,20 @@ header ul li a:hover {
     #txtgaleria {
         transform: scaleY(1.1);
     }
+
+    .aguarde {
+        flex-direction: column;
+    }
    
+    .aguarde img {
+        width: 600px;
+    }
+
+    .form-aguarde {
+        width: 60%;
+        height: 40vh;
+       
+    }
 
 
 
@@ -856,6 +904,10 @@ header ul li a:hover {
         transform: scaleY(1.1)
     }
 
+    .aguarde img {
+        width: 600px;
+    }
+    
 
 }
 
@@ -958,6 +1010,14 @@ header ul li a:hover {
     #container_txt, #txtgaleria, .alternando {
         transform: scaleY(1.1)
     }
+
+    /* --- Aguarde ----*/
+    .aguarde img {
+        width: 700px;
+    }
+
+   
+    
 
 
 
