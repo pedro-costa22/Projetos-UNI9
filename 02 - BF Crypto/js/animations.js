@@ -108,16 +108,10 @@ btnAsk.forEach((ask) =>{
                 iconAsk[1].style.display = "none";
                 imgQuest.src = "./images/saque.svg";
 
-                /*
-                iconAsk[0].style.display = "block";
-                iconAsk[2].style.display = "block";
-                iconAsk[3].style.display = "block";
-                iconAsk[4].style.display = "block"; */
-
                 for(i = 0; i <= answer.length; i++){
                     answer[i].classList.remove("open-answer");
                     if(i == 1) {
-                        answer[i].classList.add("open-answer");
+                        answer[i].classList.add("open-answer"); 
                     } 
                 }
                 break;
@@ -127,12 +121,6 @@ btnAsk.forEach((ask) =>{
                 iconAsk[2].style.display = "none";
                 imgQuest.src = "./images/lancamento.svg";
 
-                /*
-                iconAsk[0].style.display = "block";
-                iconAsk[1].style.display = "block";
-                iconAsk[3].style.display = "block";
-                iconAsk[4].style.display = "block"; */
-                
                 for(i = 0; i <= answer.length; i++){
                     answer[i].classList.remove("open-answer");
                     if(i == 2) {
@@ -146,12 +134,6 @@ btnAsk.forEach((ask) =>{
                 iconAsk[3].style.display = "none";
                 imgQuest.src = "./images/gaming.svg";
 
-                /*
-                iconAsk[0].style.display = "block";
-                iconAsk[1].style.display = "block";
-                iconAsk[2].style.display = "block";
-                iconAsk[4].style.display = "block";  */
-
                 for(i = 0; i <= answer.length; i++){
                     answer[i].classList.remove("open-answer");
                     if(i == 3) {
@@ -164,13 +146,7 @@ btnAsk.forEach((ask) =>{
                 answer[4].classList.add("open-answer");
                 iconAsk[4].style.display = "none";
                 imgQuest.src = "./images/gaming.svg";
-                /*
-
-                iconAsk[0].style.display = "block";
-                iconAsk[1].style.display = "block";
-                iconAsk[2].style.display = "block";
-                iconAsk[3].style.display = "block"; */
-
+              
                 for(i = 0; i <= answer.length; i++){
                     answer[i].classList.remove("open-answer");
                     if(i == 4) {
@@ -182,6 +158,7 @@ btnAsk.forEach((ask) =>{
 
     })
 });
+
 
 answer.forEach((resp) =>{
     resp.addEventListener("click", () =>{
@@ -219,6 +196,7 @@ answer.forEach((resp) =>{
         }
     })
 });
+
 
 btnAsk.forEach((exit) =>{
     exit.addEventListener("click", () =>{
@@ -262,7 +240,7 @@ btnAsk.forEach((exit) =>{
                 }
         }
     })
-})
+}) 
 
 
 

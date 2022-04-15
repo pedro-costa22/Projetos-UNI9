@@ -1,4 +1,5 @@
-let progressBar = document.querySelectorAll(".circle");
+function teste(){
+    let progressBar = document.querySelectorAll(".circle");
 let progressText = document.querySelectorAll(".text");
 let inicio = [0, 0, 0, 0];
 let final = [500, 100, 60, 80];
@@ -57,17 +58,22 @@ let progressao4 = setInterval(() =>{
         clearInterval(progressao4)
     }
 }, 25)
+}
+
 
 
 window.addEventListener("scroll", progressAnimation)
 
 
 function progressAnimation(){
-    let scroll = window.pageYOffset + ((window.innerWidth * 3) / 4);
-    let positionProgressBar = document.querySelector('#progress-bar').offsetTop;
-    
+    let scroll = window.pageYOffset + ((window.innerHeight * 3) /4);
+    let positionProgressBar = document.querySelector('.review').offsetTop; 
+
+    if(scroll >= positionProgressBar){
+        teste()
+
+        window.removeEventListener("scroll", progressAnimation)
+    }
   
-   
-    
-    
-}
+} 
+

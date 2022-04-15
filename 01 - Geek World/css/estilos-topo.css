@@ -1,0 +1,258 @@
+/* Formatações gerais */
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #ccc;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+/* Formatações topo */
+#container {
+    background-color: #00A3AD;
+    width: 100%;
+    height: 44px;
+}
+
+.div-fundo {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+}
+
+.conteudo {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.conteudo a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+    font-size: 10px;
+    margin-top: 17px;
+}
+
+.conteudo a:hover {
+    color: #ccc;
+}
+
+.ajuste {
+    padding-right: 5px;
+    
+}
+
+/* Formatações Navegação */
+
+#nav-geek {
+    background-color: #00ACB7;
+    width: 100%;
+    height: 90px;
+}
+
+.nav-ajuste {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    
+    
+}
+
+.logo {
+    padding-top: 6px;
+    margin-right: 100px;
+}
+
+.search-box {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    font-size: 15px;
+    cursor: text;
+    border: 0;
+    appearance: none;
+    padding: 7px 45px 10px 25px;  
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    margin-top: 25px;
+    
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;    
+}
+
+
+.conta {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 31px;
+    justify-content: center;
+    
+}
+.conta-cliente a{
+    max-width: 1170px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px; 
+    
+}
+
+.ajust {
+    font-size: 14px;
+}
+
+
+.carrinho {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 0;
+}
+.compras {
+    font-size: 30px;
+    color: white;
+}
+
+.compras a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.compras a:hover {
+    color: #a7a7a7;
+}
+
+/* Formatações Menu Drop */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.drop {
+    background: #fff;
+    width: 100%;
+    height: 40px;
+
+}
+
+.menu-drop {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu-ul li{
+    text-decoration: none;
+    display: inline;
+    
+   
+}
+
+.menu-ul li a{
+    color: #00ACB7;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0  25px 0 25px;
+    
+}
+
+.menu-ul li a:hover {
+    color: grey;
+}
+
+
+/* Formatações Novidades */
+
+.content {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.navigation {
+    bottom: 160px;
+    left: 850px;
+    margin-left: 48%;
+    
+
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+    
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+.input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;  
+}
+
+.slide {
+    width: 34%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -34%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -68%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
