@@ -1,4 +1,4 @@
-function teste(){
+function progressBar(){
     let progressBar = document.querySelectorAll(".circle");
 let progressText = document.querySelectorAll(".text");
 let inicio = [0, 0, 0, 0];
@@ -70,7 +70,7 @@ function progressAnimation(){
     let positionProgressBar = document.querySelector('.review').offsetTop; 
 
     if(scroll >= positionProgressBar){
-        teste()
+        progressBar()
 
         window.removeEventListener("scroll", progressAnimation)
     }
